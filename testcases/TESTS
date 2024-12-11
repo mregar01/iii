@@ -1,0 +1,22 @@
+Test 1: Edge case where all edges are white, however, the second column/row and
+second last column/row are all black. 
+
+Answer 1: Expected that the implementation of
+unblackedges does not change anything in this file, resulting in the
+answer file being the same.
+
+Test 2: Edge case where every corner is white. This is to target 
+implementations that start by checking and recursing from the corners, 
+instead of checking the whole edge. This is also to check whether the recursion
+works and replaces black pixels connected to the edge.
+
+Answer 2: Expected that the implementation checks all black pixels on edges
+and that it converts the whole image to white as a result.
+
+Test 3: General test case, for where black lines are connected to the edges.
+Essentially, tests whether the recursion of the implementation works correctly
+and replaces all black pixels connected to edges to white. One black pixel is
+disconnected from the edges in this image.
+
+Answer 3: Expected that the entire image is white except for that one black
+pixel that is not connected to the black edges.
